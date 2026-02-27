@@ -5,8 +5,14 @@ const courseSchema=new mongoose.Schema({
         type:String,
         required:true
     },
-    description:String,
-    instructor:String,
+    description:{
+        type:String,
+        default:"",
+    },
+    instructor:{
+        type:String,
+        default:"",
+    },
 },{timestamps:true}
 );
 
